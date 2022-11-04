@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modest</title>
+    <link rel="stylesheet" href="fonts.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css"
+    />
+  </head>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+  <script src="js/figures.js" defer></script>
+  <body
+    class="bg-gradient-to-br min-h-screen from-sky-50 to-blue-100 px-10 md:px-32 flex flex-col items-center w-full max-w-full mb-10"
+    onload="typeWriter()"
+  >
+    <nav class="border-gray-200 px-2 sm:px-4 py-2.5 rounded w-full">
+      <div
+        class="container flex flex-wrap justify-between items-center mx-auto"
+      >
+        <a href="index.html" class="flex items-center">
+          <span class="self-center text-2xl lobsterTwo whitespace-nowrap"
+            >Modest</span
+          >
+        </a>
+        <div class="flex md:order-2">
+          <button
+            type="button"
+            class="focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
+          ></button>
+          <button
+            data-collapse-toggle="navbar-cta"
+            type="button"
+            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            aria-controls="navbar-cta"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div
+          class="hidden bg-transparent justify-between items-center w-full md:flex md:w-auto md:order-1"
+          id="navbar-cta"
+        >
+          <ul
+            class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent text-lg md:text-blue-700 md:p-0"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="problem.html"
+                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 text-lg md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+                >Problem</a
+              >
+            </li>
+            <li>
+              <a
+                href="cause.html"
+                class="block py-2 pr-4 pl-3 text-lg text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+                >Causes</a
+              >
+            </li>
+            <li>
+              <a
+                href="response.html"
+                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 text-lg md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+                >Our Response</a
+              >
+            </li>
+            <li>
+              <a
+                href="hub.html"
+                class="block py-2 pr-4 pl-3 text-lg text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+                >Information Hub</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <hr class="mb-8 h-px bg-blue-100 border-0 w-full" />
+    <div class="text-center">
+      <h1 class="lobsterTwo text-5xl my-2" id="write"></h1>
+      <p class="pangolin">
+        Live a minimalist life and do yourself a favour.
+        <br />
+        <span class="text-blue-800">#SupportSustainableLiving</span>
+      </p>
+    </div>
+    <img
+      class="h-auto border-b-2 border-blue-200 w-full max-w-3xl"
+      src="assets/images/gardening.png"
+      alt="image description"
+    />
+    <div class="flex flex-col items-center h-full w-full gap-10 my-10">
+      <a
+        href="problem.html"
+        class="flex flex-col items-center bg-white md:flex-row max-w-[700px] p-10 gap-8 customShadow min-h-[250px]"
+      >
+        <img
+          class="object-cover h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+          src="/assets/images/problem.png"
+          alt=""
+        />
+        <div class="flex flex-col justify-between p-4 leading-normal">
+          <h5 class="mb-2 text-2xl tracking-tight text-gray-900 pangolin">
+            The Problem. Why does this website promote sustainable lifestyle?
+          </h5>
+        </div>
+      </a>
+      <a
+        href="cause.html"
+        class="flex flex-col items-center bg-white md:flex-row max-w-[700px] p-10 gap-8 w-full customShadow min-h-[250px]"
+      >
+        <img
+          class="object-cover h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+          src="/assets/images/wildifre.png"
+          alt=""
+        />
+        <div class="flex flex-col justify-between p-4 leading-normal">
+          <h5 class="mb-2 text-2xl tracking-tight text-gray-900 pangolin">
+            What's causing the problem? 🤔
+          </h5>
+        </div>
+      </a>
+      <a
+        href="response.html"
+        class="flex flex-col items-center bg-white md:flex-row max-w-[700px] p-10 gap-8 w-full customShadow min-h-[250px]"
+      >
+        <img
+          class="object-cover h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+          src="/assets/images/solution.png"
+          alt=""
+        />
+        <div class="flex flex-col justify-between p-4 leading-normal">
+          <h5 class="mb-2 text-2xl tracking-tight text-gray-900 pangolin">
+            So what should we do to prevent it?
+          </h5>
+        </div>
+      </a>
+    </div>
+    <h1 class="text-3xl">
+      Know more about sustainable living through
+      <a
+        href="hub.html"
+        class="font-medium text-blue-600 underline hover:no-underline"
+        >Information Hub.</a
+      >
+    </h1>
+  </body>
+</html>
